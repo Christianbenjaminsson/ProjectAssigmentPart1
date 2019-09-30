@@ -12,4 +12,15 @@ public class Vehicle {
         this.year = year;
     }
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getYear() {
+        return year;
+    }
 }
