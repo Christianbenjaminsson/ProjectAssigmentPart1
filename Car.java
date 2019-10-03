@@ -17,22 +17,22 @@ public class Car extends Vehicle {
     }
 
     public String getBrand() {
-        return super.getBrand();
+        return super.brand();
     }
 
     public String getColor() {
-        return super.getColor();
+        return super.color();
     }
 
     public int getYear() {
-        super.getYear()
+        return super.year();
     }
 
-    public String getTypOfCar() {
+    public String typOfCar() {
         return typOfCar;
     }
 
-    public int getNumberOfPassengers() {
+    public int numberOfPassengers() {
         return numberOfPassengers;
     }
 }
