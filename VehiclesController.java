@@ -1,5 +1,7 @@
 package com.example.projektuppgiftdel1;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 
 public class VehiclesController {
@@ -32,6 +34,21 @@ public class VehiclesController {
             }
         }
         return -1;
+    }
+
+    public void printVehicles() {
+        System.out.println("\nDatabase Vehicles:");
+        for(int i=0; i<this.databaseCars.size(); i++) {
+            System.out.println((i+1) + ". Brand: " +
+                    this.databaseCars.get(i).getBrand() + ", Color: " +
+                    this.databaseCars.get(i).getColor() + ", Year: " +
+                    this.databaseCars.get(i).getYear() + ", Typ of car: " +
+                    this.databaseCars.get(i).typOfCar() + ", Number of passengers: " +
+                    this.databaseCars.get(i).numberOfPassengers());
+        }
+        if(this.databaseCars.size() == 0) {
+            System.out.println("Default message - database is empty.");
+        }
     }
 
 }
