@@ -1,5 +1,15 @@
 package com.example.projektuppgiftdel1;
 
+/**
+ * <h1>Subclass Car</h1>
+ * Extends Vehicles.
+ * Includes private variables and getters to enable access in controller.
+ * <p></p>
+ *
+ * @author Christian Benjaminsson
+ * @version 1.0
+ */
+
 public class Car extends Vehicle {
 
     private String typOfCar;

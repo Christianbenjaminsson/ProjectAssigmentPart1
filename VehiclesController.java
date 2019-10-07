@@ -1,8 +1,16 @@
 package com.example.projektuppgiftdel1;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.ArrayList;
+
+/**
+ * <h1>Controller class VehiclesController</h1>
+ * Includes methods to control flow of data.
+ * Also includes arraylist named Car to save information about vehicles
+ * <p></p>
+ *
+ * @author Christian Benjaminsson
+ * @version 1.0
+ */
 
 public class VehiclesController {
 
@@ -21,10 +29,6 @@ public class VehiclesController {
         databaseCars.add(car);
         return true;
     }
-
-    /*private int findCar(Car car) {
-        return this.databaseCars.indexOf(car);
-    }*/
 
     private int findCar(String carName) {
         for(int i=0; i<this.databaseCars.size(); i++) {

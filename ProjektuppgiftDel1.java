@@ -2,6 +2,16 @@ package com.example.projektuppgiftdel1;
 
 import java.util.Scanner;
 
+/**
+ * <h1>Project Arraylist</H>
+ * Program that saves information about vehicles in an arraylist.
+ * Menu with choises: add Vehicles, show vehicles, show menu and end application.
+ * <p></p>
+ *
+ * @author Christian Benjaminsson
+ * @version 1.0
+ */
+
 public class ProjektuppgiftDel1 {
 
     private static Scanner scan = new Scanner(System.in);
