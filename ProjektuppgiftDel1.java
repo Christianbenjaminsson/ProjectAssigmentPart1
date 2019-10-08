@@ -3,13 +3,12 @@ package com.example.projektuppgiftdel1;
 import java.util.Scanner;
 
 /**
- * <h1>Project Arraylist</H>
- * Program that saves information about vehicles in an arraylist.
- * Menu with choises: add Vehicles, show vehicles, show menu and end application.
- * <p></p>
+ * <h1>Project Arraylist</h1>
+ * <p>Program that saves information about vehicles in an arraylist.<br>
+ * Menu with choises: add Vehicles, show vehicles, show menu and end application.</p>
  *
  * @author Christian Benjaminsson
- * @version 1.0
+ * @version 1.6
  */
 
 public class ProjektuppgiftDel1 {
@@ -22,6 +21,9 @@ public class ProjektuppgiftDel1 {
         boolean quit = false;
         printactions();
 
+        /**
+         * While-loop runs until user ends application via choice in menu
+         */
         while(!quit) {
             System.out.print("\nPrint your choise (choose 3 for menu): ");
             int input = scan.nextInt();
@@ -47,8 +49,11 @@ public class ProjektuppgiftDel1 {
         }
     }
 
+    /**
+     * Printactions is called and prints out menu before while-loop
+      */
     private static void printactions() {
-        System.out.print("\nMenu: \n\n" +
+        System.out.print("Menu: \n\n" +
                 "1. Add vehicle \n" +
                 "2. Show vehicles \n" +
                 "3. Show menu\n" +
@@ -56,6 +61,11 @@ public class ProjektuppgiftDel1 {
 
     }
 
+    /**
+     * Method addNewCar is called via menu in switch<br>
+     * User inputs to save information about a new car.<br>
+     * Object newcar is created and saves input from user if input not match already saved car.
+     */
     private static void addNewCar() {
         System.out.print("Write brand of vehicle: ");
         String brand = scan.nextLine();
@@ -74,9 +84,7 @@ public class ProjektuppgiftDel1 {
             System.out.println("New vehicle created: Brand: " +brand+ " Color: " +color+
                     " Year: " +year + " Type of car: " +typOfCar+ " Number of passengers " +numberOfPassengers);
         } else {
-            System.out.println("Can´t add vehicle " +brand+ " it already excists");
+            System.out.println("Can´t add vehicle " +brand+ " it already exists");
         }
     }
-
-
 }
